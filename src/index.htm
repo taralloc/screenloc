@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  <style>
+	html,
+	body {
+	  height: 100%;
+	  margin: 0;
+	}
+
+	.box {
+	  display: flex;
+	  flex-direction: column;
+	  height: 100%;
+	  margin-left: 10px;
+	  margin-top: -5px;
+	}
+
+	.header {
+	  height: auto;
+	  display: flex;
+	  flex-direction: row;
+	  align-items: center;
+	}
+
+	.content {
+	  flex: 1;
+	  min-height: 0px;
+	  display: flex;
+	  flex-direction: row;
+	  margin-top: 8px;
+	}
+
+	.footer {
+	  flex: 0 1 10px;
+	}
+	
+	.map {
+		flex: 1 1 auto;
+	}
+	
+	.sidebar {
+		flex: 2 1 auto;
+		border-left: 1px solid black;
+		padding: 3px;
+		text-align: center;
+	}
+
+	#map
+	{
+		min-height: 0px;
+	}
+	
+	table {
+	  border-collapse: collapse;
+	      overflow: auto;
+		  height: 100px;
+	}
+
+	table, th, td {
+	  border: 1px solid black;
+	}
+
+	.input-div{
+	 margin-top: 15px;
+	}
+	
+	.input-text{
+	 margin: 5px 0 0 0;
+	 width: 250px;
+	}
+	
+	.readability{
+	 border: 1px solid black;
+	 width: 350px;
+	 padding: 12px;
+	}
+	
+	.readability-input{
+	 margin-left: 30px; position:relative;
+	 }
+	 
+	 .number{
+	  margin-top: 10px;
+	  font-size: xx-large;
+	  }
+	  
+	.result-div{
+	 margin-top: 35px;
+	}
+	  
+    </style>
+    <title>Centrality plot</title>
+  </head>
+  <body>
+  <div class="box">
+    <div class="header">
+			<div>
+				<h1>Screenloc</h1>
+				<p style="font-size: large; margin-top: -8px;">A tool to compute the number of lines of code (or text) displayed on a given computer monitor.</p>
+			</div>
+	</div>
+	<div class="content">
+			<div id="map" class="map">
+				<div>
+					Diagonal (inches): <br>
+					<input id="d" type="text" class="input-text">
+				</div>
+				<div class="input-div">
+					Horizontal resolution (pixels): <br>
+					<input id="rx" type="text" class="input-text">
+				</div>
+				<div class="input-div">
+					Vertical resolution (pixels): <br>
+					<input id="ry" type="text" class="input-text">
+				</div>
+				<div class="input-div readability">
+					<b>Readability</b>
+					<div class="input-div">
+						<input type="radio" name="readability" checked> Provide A and L:
+						<div class="readability-input">
+							<div class="input-div">
+							A (arcminutes): 
+							<div class="help-tip">
+								<p>A - This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+							</div>
+							<br>
+							<input id="A" type="text" class="input-text">
+							</div>
+							<div class="input-div">
+							L (inches):
+							<div class="help-tip">
+								<p>L - This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+							</div>
+							<br>
+							<input id="rx" type="text" class="input-text">
+							</div>					
+						</div>
+					</div>
+					<div class="input-div">
+						<input type="radio" name="readability"> Provide x:
+						<div class="readability-input">
+							<div class="input-div">
+							x (inches):
+							<div class="help-tip">
+								<p>x - This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+							</div>
+							<br>
+							<input id="x" type="text" class="input-text">
+							</div>				
+						</div>
+					</div>
+					<div class="input-div">
+						<input type="radio" name="readability"> Provide k:
+						<div class="readability-input">
+							<div class="input-div">
+							k:
+							<div class="help-tip">
+								<p>k - This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+							</div>
+							<br>
+							<input id="A" type="text" class="input-text">
+							</div>				
+						</div>
+					</div>
+				</div>
+			<div class="input-div" style="text-align: center">
+				<button type="button" style="font-size: large">Compute</button>
+			</div>
+			</div>
+			<div  id="sidebarPOI" class="sidebar" style="">
+				<div>
+					<p style="font-size: large">The <b>number of lines</b> of text is</p>
+					<div class="number" id="outN">10</div>
+				</div>
+				<div class="result-div">
+					<p style="font-size: large">The <b>zoom level</b> required is</p>
+					<div class="number" id="outK">10</div>
+				</div>
+				<div class="result-div">
+					<p style="font-size: large">The <b>pixel density</b> of the screen is</p>
+					<div class="number" id="outDelta">10</div>
+				</div>
+				<div class="result-div">
+					<p style="font-size: large">The <b>aspect ratio</b> of the screen is</p>
+					<div class="number" id="outAR">10</div>
+				</div>
+			</div>
+	</div>
+	<div id="info" class="footer">
+		Contribute on <a href="http://www.github.com/taralloc/screenloc">Github</a>. Read on how it works in the <a href="https://github.com/taralloc/screenloc/raw/master/doc/screenloc.pdf">documentation</a>. 
+	</div>
+	</div>
+  </body>
+</html>
