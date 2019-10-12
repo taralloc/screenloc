@@ -1,0 +1,10 @@
+https://channel9.msdn.com/Events/Build/2015/2-63
+https://graphicdesign.stackexchange.com/questions/199/point-vs-pixel-what-is-the-difference
+https://www.extron.com/article/videowallfontsize
+http://homepage.tudelft.nl/9c41c/Readability_in_classrooms.pdf
+https://lane-widen.com/resolution/
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
+https://docs.microsoft.com/en-us/windows/win32/learnwin32/dpi-and-device-independent-pixels#dwm-scaling
+https://plugable.com/2015/06/04/the-scales-of-windows-never-seem-to-balance/
+https://blogs.technet.microsoft.com/askcore/2015/12/08/display-scaling-in-windows-10/
+https://web.archive.org/web/20150818103913/https://blogs.windows.com/bloggingwindows/2013/07/15/windows-8-1-dpi-scaling-enhancements/
