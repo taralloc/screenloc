@@ -40,7 +40,7 @@ function compute_given_x(d,r_x,r_y,x) {
 	let n = fn(r_y,y);
 	let k = fk(y,r_y) * 1;
 	let ar = far(r_x / r_y);
-	return {n, k, delta, ar};
+	return {n, k, delta, ar, x};
 }
 
 function compute_given_a_l(d,r_x,r_y,A,L) {
@@ -52,7 +52,8 @@ function compute_given_k(d,r_x,r_y,k) {
 	let y = fy_given_k(k);
 	let n = fn(r_y,y);
 	let ar = far(r_x / r_y);
-	return {n, k, delta, ar};
+	let x = y / delta;
+	return {n, k, delta, ar, x};
 }
 
 function far(ar) {
@@ -93,4 +94,5 @@ document.getElementById('btnCompute').onclick = function(){
 	document.getElementById("outK").innerText = res.k.toFixed(2);
 	document.getElementById("outDelta").innerText = res.delta.toFixed(2);
 	document.getElementById("outAR").innerText = res.ar;	
+	document.getElementById("outX").innerText = res.x.toFixed(3);
 };
