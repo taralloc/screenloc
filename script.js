@@ -40,7 +40,7 @@ function compute_given_x(d,r_x,r_y,x) {
 	let n = fn(r_y,y);
 	let k = fk(y,r_y) * 1;
 	let ar = far(r_x / r_y);
-	return {n, k.toFixed(2), delta, ar};
+	return {n, k.toFixed(2), delta.toFixed(2), ar};
 }
 
 function compute_given_a_l(d,r_x,r_y,A,L) {
@@ -48,11 +48,11 @@ function compute_given_a_l(d,r_x,r_y,A,L) {
 }
 
 function compute_given_k(d,r_x,r_y,k) {
-	let delta = fdelta(r_x,r_y,d).toFixed(2);
+	let delta = fdelta(r_x,r_y,d);
 	let y = fy_given_k(k);
 	let n = fn(r_y,y);
 	let ar = far(r_x / r_y);
-	return {n, k, delta, ar};
+	return {n, k, delta.toFixed(2), ar};
 }
 
 function far(ar) {
