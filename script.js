@@ -27,7 +27,7 @@ function fk(y,r_y) {
 }
 
 function fx(A,L) {
-	return L * Math.tan(A / 60 * Math.PI/180);
+	return 2 * L * Math.tan(A / (2 * 60) * Math.PI/180);
 }
 
 function fdelta(r_x,r_y,d) {
