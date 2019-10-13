@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.09.0 (MiKTeX 2.9.6880 64-bit)  (format=lualatex 2019.6.5)  12 OCT 2019 17:19
+This is LuaTeX, Version 1.09.0 (MiKTeX 2.9.6880 64-bit)  (format=lualatex 2019.6.5)  13 OCT 2019 09:53
  restricted system commands enabled.
 **screenloc
 (./screenloc.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.586 seconds
+luaotfload | main : initialization completed in 1.094 seconds
 ("C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:/Program Files/MiKTeX 2.9/tex/latex/base/size10.clo"
@@ -669,13 +669,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
 )
 
 Here is how much of LuaTeX's memory you used:
- 13656 strings out of 494324
+ 13659 strings out of 494324
  125200,794899 words of node,token memory allocated
- 656 words of node memory still in use:
-   5 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 34 attribute, 61 glue_spec
-, 34 attribute_list, 1 write, 4 pdf_action nodes
-   avail lists: 1:2,2:360,3:115,4:10,5:165,6:14,7:2145,8:96,9:232,10:9,11:136
- 17482 multiletter control sequences out of 65536+200000
+ 666 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 35 attribute, 61 glue_spec
+, 35 attribute_list, 1 write, 5 pdf_action nodes
+   avail lists: 1:2,2:358,3:129,4:11,5:165,6:13,7:2145,8:96,9:232,10:9,11:136
+ 17484 multiletter control sequences out of 65536+200000
  61 fonts using 4267415 bytes
  36i,9n,45p,940b,1110s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/program files/miktex 2.9/fonts/opentype/public/lm/lmmono10-regular.otf><c:/p
@@ -693,9 +693,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on screenloc.pdf (4 pages, 164416 bytes).
+Output written on screenloc.pdf (4 pages, 165475 bytes).
 
-PDF statistics: 178 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 131072)
+PDF statistics: 182 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 131072)
  41 words of extra memory for PDF output out of 10000 (max. 100000000)
 

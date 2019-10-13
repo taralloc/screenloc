@@ -55,6 +55,18 @@
       \verb https://www.extron.com/article/videowallfontsize
       \endverb
     \endentry
+    \entry{leserlich}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labeltitlesource}{title}
+      \field{title}{Font size calculator}
+      \verb{urlraw}
+      \verb https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index-en.php
+      \endverb
+      \verb{url}
+      \verb https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index-en.php
+      \endverb
+    \endentry
     \entry{wiki-va}{online}{}
       \field{sortinit}{V}
       \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
