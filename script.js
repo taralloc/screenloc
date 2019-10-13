@@ -35,12 +35,12 @@ function fdelta(r_x,r_y,d) {
 }
 
 function compute_given_x(d,r_x,r_y,x) {
-	let delta = fdelta(r_x,r_y,d).toFixed(2);
+	let delta = fdelta(r_x,r_y,d);
 	let y = fy_given_x_delta(x,delta,r_y);
 	let n = fn(r_y,y);
 	let k = fk(y,r_y) * 1;
 	let ar = far(r_x / r_y);
-	return {n, k, delta, ar};
+	return {n, k.toFixed(2), delta, ar};
 }
 
 function compute_given_a_l(d,r_x,r_y,A,L) {
