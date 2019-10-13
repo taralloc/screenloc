@@ -5,7 +5,7 @@ function fn(r_y, y) {
 	if(y > r_y) n = 1;
 	else if(y < y_bar) n = r_y / y_bar;
 	else n = r_y / y;
-	return n.toFixed(0);
+	return parseInt(n.toFixed(0));
 }
 
 function fy_given_x_delta(x,delta,r_y) {
@@ -40,7 +40,7 @@ function compute_given_x(d,r_x,r_y,x) {
 	let n = fn(r_y,y);
 	let k = fk(y,r_y) * 1;
 	let ar = far(r_x / r_y);
-	return {n, k.toFixed(2), delta.toFixed(2), ar};
+	return {n, k, delta, ar};
 }
 
 function compute_given_a_l(d,r_x,r_y,A,L) {
@@ -52,7 +52,7 @@ function compute_given_k(d,r_x,r_y,k) {
 	let y = fy_given_k(k);
 	let n = fn(r_y,y);
 	let ar = far(r_x / r_y);
-	return {n, k, delta.toFixed(2), ar};
+	return {n, k, delta, ar};
 }
 
 function far(ar) {
@@ -90,7 +90,7 @@ document.getElementById('btnCompute').onclick = function(){
 	}
 	
 	document.getElementById("outN").innerText = res.n;
-	document.getElementById("outK").innerText = res.k;
-	document.getElementById("outDelta").innerText = res.delta;
+	document.getElementById("outK").innerText = res.k.toFixed(2);
+	document.getElementById("outDelta").innerText = res.delta.toFixed(2);
 	document.getElementById("outAR").innerText = res.ar;	
 };
